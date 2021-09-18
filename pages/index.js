@@ -1,6 +1,7 @@
 import Nav from "../components/Nav";
 import Image from "next/image";
 import AboutMe from "../components/AboutMe";
+import Resume from "../components/Resume";
 
 export default function Home() {
     return (
@@ -12,8 +13,11 @@ export default function Home() {
                     src="https://images.unsplash.com/photo-1517059224940-d4af9eec41b7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1467&q=80"
                 />
             </div>
-            <div className="bg-gray-400">
+            <div className="bg-gray-silver">
                 <AboutMe />
+            </div>
+            <div className="bg-gray-light">
+                <Resume />
             </div>
         </div>
     );
