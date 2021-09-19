@@ -1,7 +1,7 @@
 import Nav from "../components/Nav";
 import Image from "next/image";
 import AboutMe from "../components/AboutMe";
-import Resume from "../components/Resume";
+import Work from "../components/Work";
 
 export default function Home() {
     return (
@@ -17,7 +17,7 @@ export default function Home() {
                 <AboutMe />
             </div>
             <div className="bg-gray-light">
-                <Resume />
+                <Work />
             </div>
         </div>
     );

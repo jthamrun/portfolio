@@ -5,7 +5,7 @@ function Nav() {
         <header className="sticky top-0 z-20 bg-white">
             <div className="flex h-24 items-center justify-center">
                 <div>
-                    <h1 className="text-lg md:text-2xl font-karla font-light tracking-widest">
+                    <h1 className="text-lg md:text-xl font-karla font-light tracking-widest">
                         JONATHAN THAMRUN
                     </h1>
                 </div>
