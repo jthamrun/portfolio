@@ -31,7 +31,8 @@ module.exports = {
                 gray: {
                     basic: "#262525",
                     silver: "#CED4DA",
-                    light: "#F8F9FA"
+                    light: "#E9ECEF",
+                    lightest: "#F8F9FA"
                 },
             },
         },

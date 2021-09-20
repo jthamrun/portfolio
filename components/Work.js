@@ -3,7 +3,7 @@ import WorkInfo from "./WorkInfo"
 function Work() {
     return (
         <div className="py-20 mx-10 md:mx-auto md:max-w-4xl">
-            <div className="text-center font-karla">
+            <div className="text-center font-karla tracking-widest">
                 <h1>WORK</h1>
             </div>
             <div className="mt-16 space-y-5 md:grid md:grid-cols-2 md:grid-flow-row md:gap-y-4 md:gap-x-10 text-center md:mx-6">

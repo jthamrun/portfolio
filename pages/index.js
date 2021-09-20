@@ -2,6 +2,7 @@ import Nav from "../components/Nav";
 import Image from "next/image";
 import AboutMe from "../components/AboutMe";
 import Work from "../components/Work";
+import Tutoring from "../components/Tutoring";
 
 export default function Home() {
     return (
@@ -18,6 +19,9 @@ export default function Home() {
             </div>
             <div className="bg-gray-light">
                 <Work />
+            </div>
+            <div className="bg-gray-lightest">
+                <Tutoring />
             </div>
         </div>
     );
