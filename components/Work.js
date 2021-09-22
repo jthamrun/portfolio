@@ -2,7 +2,7 @@ import WorkInfo from "./WorkInfo"
 
 function Work() {
     return (
-        <div className="py-20 mx-10 md:mx-auto md:max-w-4xl">
+        <div className="py-20 mx-10 md:mx-auto md:max-w-3xl">
             <div className="text-center font-karla tracking-widest">
                 <h1>WORK</h1>
             </div>
