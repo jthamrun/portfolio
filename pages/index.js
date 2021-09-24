@@ -4,17 +4,24 @@ import AboutMe from "../components/AboutMe";
 import Work from "../components/Work";
 import Tutoring from "../components/Tutoring";
 import ContactMe from "../components/ContactMe";
+import portfolioPic from "../public/portfolioPic.jpg";
 
 export default function Home() {
     return (
         <div>
             <Nav></Nav>
-            <div className="relative bg-white pb-2/3">
+            <div className="relative bg-white pb-2/3 mx-10">
                 <img
                     className="absolute h-full w-full object-cover"
-                    src="https://images.unsplash.com/photo-1517059224940-d4af9eec41b7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1467&q=80"
+                    src="https://i.imgur.com/8UE9nBd.jpg"
                 />
             </div>
+            {/* <div className="relative bg-white pb-2/3">
+                <Image
+                    className="absolte h-full w-full object-cover"
+                    src={portfolioPic}
+                />
+            </div> */}
             <div className="bg-gray-silver">
                 <AboutMe />
             </div>
