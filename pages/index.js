@@ -3,6 +3,7 @@ import Image from "next/image";
 import AboutMe from "../components/AboutMe";
 import Work from "../components/Work";
 import Tutoring from "../components/Tutoring";
+import ContactMe from "../components/ContactMe";
 
 export default function Home() {
     return (
@@ -22,6 +23,9 @@ export default function Home() {
             </div>
             <div className="bg-gray-lightest">
                 <Tutoring />
+            </div>
+            <div>
+                <ContactMe />
             </div>
         </div>
     );
