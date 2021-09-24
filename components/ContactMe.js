@@ -41,14 +41,14 @@ function ContactMe() {
     };
 
     return (
-        <div className="min-h-[75vh] flex flex-col items-center justify-center lg:justify-evenly lg:flex-row mx-10 md:mx-20 my-24">
+        <div className="min-h-[75vh] flex flex-col items-center justify-center lg:justify-evenly lg:flex-row mx-10 md:mx-20 py-20">
             <div className="text-center lg:text-left w-full max-w-lg lg:max-w-sm">
                 <h1 className="text-4xl font-bold">Contact</h1>
                 <p className="mt-5 text-lg mb-10 lg:mb-0">
                     Get in touch. Up your game <br />
                     We're waiting, but the competition isn't.
                 </p>
-                <p className="mt-5 font-ligth hidden lg:flex mt-24">
+                <p className="mt-5 font-light hidden lg:flex">
                     The Republic of Singapore
                 </p>
                 <p className="mt-5 font-light hidden lg:inline-block p-2 border border-white border-opacity-50 cursor-pointer hover:border-opacity-100">
@@ -56,7 +56,7 @@ function ContactMe() {
                 </p>
             </div>
 
-            <form className="mt-0 w-full md:max-w-lg lg:max-w-xl lg:mt-0 p-7 md:p-10 bg-white text-black rounded-lg text-center">
+            <form className="mt-0 w-full md:max-w-lg lg:max-w-xl lg:mt-0 p-7 md:p-10 bg-gray-lightest text-black rounded-lg text-center">
                 <div className="flex flex-col space-y-5">
                     <input
                         value={name}

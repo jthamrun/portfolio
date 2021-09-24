@@ -5,6 +5,7 @@ import Work from "../components/Work";
 import Tutoring from "../components/Tutoring";
 import ContactMe from "../components/ContactMe";
 import portfolioPic from "../public/portfolioPic.jpg";
+import Footer from "../components/Footer";
 
 export default function Home() {
     return (
@@ -28,11 +29,14 @@ export default function Home() {
             <div className="bg-gray-light">
                 <Work />
             </div>
-            <div className="bg-gray-lightest">
+            <div className="bg-gray-lighter">
                 <Tutoring />
             </div>
-            <div>
+            <div className="bg-gray-lightest">
                 <ContactMe />
+            </div>
+            <div>
+                <Footer />
             </div>
         </div>
     );
