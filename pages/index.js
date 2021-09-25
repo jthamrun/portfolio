@@ -6,36 +6,29 @@ import Tutoring from "../components/Tutoring";
 import ContactMe from "../components/ContactMe";
 import portfolioPic from "../public/portfolioPic.jpg";
 import Footer from "../components/Footer";
+import Hero from "../components/Hero";
+import Banner from "../components/Banner";
 
 export default function Home() {
     return (
-        <div>
+        <div className="md:px-5 md:mx-auto max-w-7xl">
             <Nav></Nav>
-            <div className="relative bg-white pb-2/3 mx-10">
-                <img
-                    className="absolute h-full w-full object-cover"
-                    src="https://i.imgur.com/8UE9nBd.jpg"
-                />
+            <div className="md:h-[75vh]">
+                <Hero />
             </div>
-            {/* <div className="relative bg-white pb-2/3">
-                <Image
-                    className="absolte h-full w-full object-cover"
-                    src={portfolioPic}
-                />
-            </div> */}
-            <div className="bg-gray-silver">
+            <div className="bg-white">
                 <AboutMe />
             </div>
-            <div className="bg-gray-light">
+            <div className="bg-white">
                 <Work />
             </div>
-            <div className="bg-gray-lighter">
+            <div className="bg-white">
                 <Tutoring />
             </div>
-            <div className="bg-gray-lightest">
+            <div className="bg-white">
                 <ContactMe />
             </div>
-            <div>
+            <div className="bg-white">
                 <Footer />
             </div>
         </div>

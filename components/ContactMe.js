@@ -41,18 +41,15 @@ function ContactMe() {
     };
 
     return (
-        <div className="min-h-[75vh] flex flex-col items-center justify-center lg:justify-evenly lg:flex-row mx-10 md:mx-20 py-20">
-            <div className="text-center lg:text-left w-full max-w-lg lg:max-w-sm">
+        <div className="md:grid md:grid-cols-2 md:gap-x-10 mx-5 md:mx-auto md:max-w-4xl py-20 items-center">
+            <div className="text-center w-full max-w-lg lg:max-w-sm">
                 <h1 className="text-4xl font-bold">Contact</h1>
                 <p className="mt-5 text-lg mb-10 lg:mb-0">
                     Get in touch. Up your game <br />
                     We're waiting, but the competition isn't.
                 </p>
-                <p className="mt-5 font-light hidden lg:flex">
-                    The Republic of Singapore
-                </p>
-                <p className="mt-5 font-light hidden lg:inline-block p-2 border border-white border-opacity-50 cursor-pointer hover:border-opacity-100">
-                    hello@rookbook.com.sg
+                <p className="mt-5 font-light hidden lg:inline-block p-2 border border-black border-opacity-50 cursor-pointer hover:border-opacity-100">
+                    jonathan.thamrun@gmail.com
                 </p>
             </div>
 
