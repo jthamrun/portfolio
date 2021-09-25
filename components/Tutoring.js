@@ -2,7 +2,7 @@ import TutoringInfo from "./TutoringInfo";
 
 function Tutoring() {
     return (
-        <div className="py-10 mx-5 md:mx-auto md:max-w-4xl">
+        <div className="py-10 mx-5 md:mx-auto md:max-w-4xl" id="Tutoring">
             <div className="text-center font-karla tracking-widest">
                 <h1>TUTORING</h1>
             </div>

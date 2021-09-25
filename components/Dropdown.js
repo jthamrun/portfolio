@@ -1,19 +1,15 @@
-import InstaIcon from "../images/instagram.svg";
-import LinkedInIcon from "../images/LinkedInIcon.svg";
 import { Link, animateScroll as scroll } from "react-scroll";
 
-function Footer() {
+function Dropdown({ isOpen, toggle }) {
     return (
-        <div className="flex flex-col items-center justify-center py-10 mx-5 md:mx-auto md:max-w-4xl">
-            <div className="flex space-x-2">
-                <Link href="https://www.instagram.com/jthamrun/">
-                    <InstaIcon className="h-6 cursor-pointer" />
-                </Link>
-                <Link href="https://www.linkedin.com/in/jthm/">
-                    <LinkedInIcon className="h-6 cursor-pointer" />
-                </Link>
-            </div>
-            <div className="mt-2 flex space-x-2 ml-2">
+        <div
+            className={
+                isOpen
+                    ? "flex flex-col py-4 space-y-4 text-center items-center bg-white text-black"
+                    : "hidden"
+            }
+        >
+            <div className="flex space-x-2 ml-2">
                 <Link
                     activeClass="active"
                     to="AboutMe"
@@ -70,11 +66,8 @@ function Footer() {
                     <h2>Tutoring</h2>
                     <h2>Contact Me</h2> */}
             </div>
-            <p className="text-black opacity-75 text-xs mt-1">
-                © 2021 Jonathan Thamrun.
-            </p>
         </div>
     );
 }
 
-export default Footer;
+export default Dropdown;

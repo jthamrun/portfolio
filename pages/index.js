@@ -7,13 +7,12 @@ import ContactMe from "../components/ContactMe";
 import portfolioPic from "../public/portfolioPic.jpg";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
-import Banner from "../components/Banner";
 
 export default function Home() {
     return (
         <div className="md:px-5 md:mx-auto max-w-7xl">
             <Nav></Nav>
-            <div className="md:h-[75vh]">
+            <div className="">
                 <Hero />
             </div>
             <div className="bg-white">

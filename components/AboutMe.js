@@ -2,7 +2,7 @@ import AboutMeInfo from "./AboutMeInfo";
 
 function AboutMe() {
     return (
-        <div className="mt-20 mb-10 mx-5 md:mx-auto md:max-w-4xl">
+        <div className="mt-20 mb-10 mx-5 md:mx-auto md:max-w-4xl" id="AboutMe">
             <div className="text-center font-karla tracking-widest">
                 <h1>EDUCATION & SKILLS</h1>
             </div>

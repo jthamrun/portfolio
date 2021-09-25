@@ -41,7 +41,10 @@ function ContactMe() {
     };
 
     return (
-        <div className="md:grid md:grid-cols-2 md:gap-x-10 mx-5 md:mx-auto md:max-w-4xl py-20 items-center">
+        <div
+            className="md:grid md:grid-cols-2 md:gap-x-10 mx-5 md:mx-auto md:max-w-4xl py-20 items-center"
+            id="ContactMe"
+        >
             <div className="text-center w-full max-w-lg lg:max-w-sm">
                 <h1 className="text-4xl font-bold">Contact</h1>
                 <p className="mt-5 text-lg mb-10 lg:mb-0">
