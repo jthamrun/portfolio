@@ -33,15 +33,15 @@ function Work() {
                 </div>
 
                 <WorkInfo
-                    ImageUrl="https://i.imgur.com/VYpi07O.png"
+                    ImageUrl="https://i.imgur.com/jZcPqbT.png"
                     Title="AIRBNB CLONE - Ongong Project"
                     Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
                 />
 
                 <WorkInfo
-                    ImageUrl="https://i.imgur.com/oSqoit9.png"
+                    ImageUrl="https://i.imgur.com/8xXVzV2.png"
                     Title="ROOKBOOK"
-                    Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                    Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s uwhduawdw wduahdu."
                 />
 
                 <WorkInfo
@@ -64,8 +64,8 @@ function Work() {
 
                 <WorkInfo
                     ImageUrl="https://i.imgur.com/rB6apgn.png"
-                    Title="e-Commerce Application"
-                    Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                    Title="E-COMMERCE APPLICATION"
+                    Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever."
                 />
             </div>
         </div>

@@ -9,17 +9,19 @@ function Tutoring() {
             <div className="mt-16 space-y-20 md:space-y-32">
                 <TutoringInfo
                     orientation="left"
-                    imgUrl="https://previews.123rf.com/images/ragakawaw/ragakawaw1608/ragakawaw160800005/63249585-tower-defense-game-assets-part-1.jpg"
+                    imgUrl="https://i.imgur.com/udNjeNB.png"
                     language="Python, PyGame"
                     project="Tower Defense Game"
                     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus commodo dolor, at gravida mi. Quisque lobortis congue tortor, quis dignissim risus mollis eget."
+                    dlLink="https://drive.google.com/uc?export=download&id=1YmMTpPQej9B9j06h6UksiW5FglLDZHvW"
                 />
                 <TutoringInfo
                     orientation="left"
-                    imgUrl="https://previews.123rf.com/images/ragakawaw/ragakawaw1608/ragakawaw160800005/63249585-tower-defense-game-assets-part-1.jpg"
+                    imgUrl="https://i.imgur.com/yCLdFv3.png"
                     language="Python, PyGame"
                     project="Tower Defense Game"
                     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus commodo dolor, at gravida mi. Quisque lobortis congue tortor, quis dignissim risus mollis eget."
+                    dlLink="https://drive.google.com/uc?export=download&id=1nglaxuyy-FTNPws5QQgtoHTkh_2wJmnP"
                 />
             </div>
         </div>
