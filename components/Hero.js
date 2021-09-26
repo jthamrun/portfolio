@@ -11,11 +11,8 @@ function Hero() {
                     src="https://i.imgur.com/8UE9nBd.jpg"
                 />
             </div>
-            <p className="my-4 text-lg md:text-2xl">
-                I'm Jonathan — is simply dummy text of the printing and
-                typesetting industry. Lorem Ipsum has been the industry's
-                standard dummy text ever since the 1500s, when an unknown
-                printer took a galley of type and scrambled it.
+            <p className="my-4 text-2xl md:text-2xl text-center font-inter">
+                Hello World - I am a developer and designer.
             </p>
 
             <div className="mt-5 flex flex-col space-y-4 md:space-y-0 md:flex-row items-center justify-center space-x-4">

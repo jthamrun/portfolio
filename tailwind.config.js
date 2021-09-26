@@ -13,6 +13,7 @@ module.exports = {
                 karla: ["karla"],
                 merriweather: ["Merriweather"],
                 inter: ["inter"],
+                source: ["source"]
             },
             backgroundImage: (theme) => ({
                 "hero-image":

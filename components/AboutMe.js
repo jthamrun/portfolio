@@ -2,8 +2,8 @@ import AboutMeInfo from "./AboutMeInfo";
 
 function AboutMe() {
     return (
-        <div className="mt-20 mb-10 mx-5 md:mx-auto md:max-w-4xl" id="AboutMe">
-            <div className="text-center font-karla tracking-widest">
+        <div className="mt-32 md:mt-20 mb-10 mx-5 md:mx-auto md:max-w-4xl" id="AboutMe">
+            {/* <div className="text-center font-karla tracking-widest">
                 <h1>EDUCATION & SKILLS</h1>
             </div>
 
@@ -37,18 +37,20 @@ function AboutMe() {
                         HTML, CSS, MySQL, NoSQL, Fluter, Git, Unity
                     </h2>
                 </div>
-            </div>
+            </div> */}
 
-            <div></div>
-
-            {/* <div className="bg-gray-200 h-4 rounded-t-lg"></div>
-            <div className="bg-gray-basic text-white text-sm space-y-5 py-10">
+            <div className="bg-gray-200 h-4 rounded-t-lg"></div>
+            <div className="bg-white text-sm space-y-5 py-10 border border-2">
                 <AboutMeInfo question="origin" answer="Surabaya, Indonesia" />
                 <AboutMeInfo
                     question="education"
                     answer="University of California, Irvine"
                 />
                 <AboutMeInfo question="major" answer="Computer Science" />
+                <AboutMeInfo
+                    question="coding"
+                    answer='["Python", "Java", "Javascript", "HTML", "CSS", "React", "C++", "Flutter", "Lua", "MySQL", "NoSQL"]'
+                />
                 <AboutMeInfo
                     question="interests"
                     answer='["Development", "Code", "Football", "Coffee", "Manchester United"]'
@@ -63,12 +65,12 @@ function AboutMe() {
                     question="workExperience.current"
                     answer="Product Support, Associate"
                 />
-                <AboutMeInfo
+                {/* <AboutMeInfo
                     question="resume"
                     answer="jonathan-thamrun.pdf"
                     link="true"
-                />
-            </div> */}
+                /> */}
+            </div>
         </div>
     );
 }
