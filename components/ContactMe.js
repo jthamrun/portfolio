@@ -45,18 +45,18 @@ function ContactMe() {
             className="md:grid md:grid-cols-2 md:gap-x-10 mx-5 md:mx-auto md:max-w-4xl py-20 items-center font-merriweather"
             id="ContactMe"
         >
-            <div className="text-center w-full max-w-lg lg:max-w-sm">
+            <div className="text-center">
                 <h1 className="text-4xl font-bold">Contact</h1>
                 <p className="mt-5 text-lg mb-10 lg:mb-0">
                     Get in touch. Up your game <br />
                     We're waiting, but the competition isn't.
                 </p>
-                <p className="mt-5 font-light hidden lg:inline-block p-2 border border-black border-opacity-50 cursor-pointer hover:border-opacity-100">
+                <p className="mt-5 font-light hidden md:inline-block p-2 border border-black border-opacity-50 cursor-pointer hover:border-opacity-100">
                     jonathan.thamrun@gmail.com
                 </p>
             </div>
 
-            <form className="mt-0 w-full md:max-w-lg lg:max-w-xl lg:mt-0 p-7 md:p-10 bg-gray-lightest text-black rounded-lg text-center">
+            <form className="mt-0 w-full md:max-w-lg lg:max-w-xl lg:mt-0 p-7 md:p-10 bg-white text-black rounded-lg text-center border border-1">
                 <div className="flex flex-col space-y-5">
                     <input
                         value={name}

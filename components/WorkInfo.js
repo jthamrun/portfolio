@@ -1,4 +1,4 @@
-function WorkInfo( {ImageUrl, Text} ) {
+function WorkInfo({ ImageUrl, Text }) {
     return (
         <div className="bg-white shadow">
             <div className="relative pb-9/10 bg-red-500">
@@ -8,12 +8,10 @@ function WorkInfo( {ImageUrl, Text} ) {
                 />
             </div>
             <div className="py-6 px-4 md:px-8 text-sm text-left font-karla">
-                <p>
-                    {Text}
-                </p>
+                <p>{Text}</p>
             </div>
         </div>
-    )
+    );
 }
 
-export default WorkInfo
+export default WorkInfo;

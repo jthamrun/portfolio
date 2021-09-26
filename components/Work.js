@@ -10,20 +10,24 @@ function Work() {
                 <div className="col-span-2 bg-white shadow">
                     <div className="relative pb-1/2 bg-red-500">
                         <img
-                            className="absolute h-full w-full object-cover"
-                            src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1700&q=80"
+                            className="absolute h-full w-full"
+                            src="https://i.imgur.com/AhHctVd.png"
                         />
                     </div>
-                    <div className="py-6 px-4 md:px-8 text-sm text-left font-karla">
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book. It has
-                            survived not only five centuries, but also the leap
-                            into electronic typesetting, remaining essentially
-                            unchanged.
+                    <div className="py-6 px-4 md:px-8 text-sm text-left font-karla border-t-2">
+                        <p className="font-light">
+                            <span className="font-semibold">
+                                GREEN - Ongoing Project.
+                            </span>
+                            &nbsp;&nbsp;&nbsp;A personal project inspired by my
+                            frustration with currently available applications to
+                            split charges among friends. With COVID-19 now
+                            lifted, I want to create a tool where a group of
+                            friends will be able to calculate and split charges
+                            from a group expense through simple clicks. Not only
+                            will complex and tedious calculations be removed, a
+                            history of these splitted charges will be saved in
+                            the web application.
                         </p>
                     </div>
                 </div>

@@ -35,7 +35,7 @@ function Nav() {
                     </h1>
                 </div>
 
-                <div className="hidden md:flex space-x-2 ml-2">
+                {/* <div className="hidden md:flex space-x-2 ml-2">
                     <Link
                         activeClass="active"
                         to="AboutMe"
@@ -87,18 +87,71 @@ function Nav() {
                             Contact Me
                         </h2>
                     </Link>
-                    {/* <h2>About Me</h2>
-                    <h2>Work</h2>
-                    <h2>Tutoring</h2>
-                    <h2>Contact Me</h2> */}
-                </div>
+                </div> */}
             </div>
 
             <div
-                className="flex h-24 -mt-24 mr-4 items-center justify-end cursor-pointer"
+                className="flex h-24 -mt-24 mr-4 items-center justify-end cursor-pointer md:hidden"
                 onClick={toggle}
             >
                 <MenuAlt4Icon className="h-12 p-1" />
+            </div>
+            <div className="md:flex h-24 -mt-24 mr-4 items-center justify-end cursor-pointer hidden space-x-2">
+                <Link
+                    activeClass="active"
+                    to="AboutMe"
+                    spy={true}
+                    smooth={true}
+                    offset={-40}
+                    duration={500}
+                >
+                    <h2 className="text-light opacity-60 hover:opacity-100 hover:font-medium cursor-pointer">
+                        About Me
+                    </h2>
+                </Link>
+                <Link
+                    activeClass="active"
+                    to="Work"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    className="cursor-pointer"
+                >
+                    <h2 className="text-light opacity-60 hover:opacity-100 hover:font-medium cursor-pointer">
+                        Work
+                    </h2>
+                </Link>
+                <Link
+                    activeClass="active"
+                    to="Tutoring"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    className="cursor-pointer"
+                >
+                    <h2 className="text-light opacity-60 hover:opacity-100 hover:font-medium cursor-pointer">
+                        Tutoring
+                    </h2>
+                </Link>
+                <Link
+                    activeClass="active"
+                    to="ContactMe"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    className="cursor-pointer"
+                >
+                    <h2 className="text-light opacity-60 hover:opacity-100 hover:font-medium cursor-pointer">
+                        Contact
+                    </h2>
+                </Link>
+                {/* <h2>About Me</h2>
+                    <h2>Work</h2>
+                    <h2>Tutoring</h2>
+                    <h2>Contact Me</h2> */}
             </div>
             {/* <div className="flex h-24 -mt-24 mr-5 items-center justify-end space-x-2">
                 <Link href="">

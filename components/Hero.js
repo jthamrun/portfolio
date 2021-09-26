@@ -1,6 +1,7 @@
 import InstaIcon from "../images/instagram.svg";
 import LinkedInIcon from "../images/LinkedInIcon.svg";
 import Link from "next/link";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 function Hero() {
     return (
@@ -25,9 +26,19 @@ function Hero() {
                     </Link>
                 </div>
 
-                <button className="md:self-center p-2 px-12 bg-black text-white">
-                    Download Resume
-                </button>
+                <ScrollLink
+                    activeClass="active"
+                    to="ContactMe"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    className="cursor-pointer"
+                >
+                    <button className="md:self-center p-2 px-12 bg-black text-white">
+                        <h2 className="">Contact Me</h2>
+                    </button>
+                </ScrollLink>
             </div>
         </div>
     );

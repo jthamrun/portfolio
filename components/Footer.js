@@ -1,6 +1,7 @@
 import InstaIcon from "../images/instagram.svg";
 import LinkedInIcon from "../images/LinkedInIcon.svg";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import Link from "next/link";
 
 function Footer() {
     return (
@@ -14,7 +15,7 @@ function Footer() {
                 </Link>
             </div>
             <div className="mt-2 flex space-x-2 ml-2">
-                <Link
+                <ScrollLink
                     activeClass="active"
                     to="AboutMe"
                     spy={true}
@@ -25,8 +26,8 @@ function Footer() {
                     <h2 className="text-light opacity-60 hover:opacity-100 hover:font-medium cursor-pointer">
                         About Me
                     </h2>
-                </Link>
-                <Link
+                </ScrollLink>
+                <ScrollLink
                     activeClass="active"
                     to="Work"
                     spy={true}
@@ -38,8 +39,8 @@ function Footer() {
                     <h2 className="text-light opacity-60 hover:opacity-100 hover:font-medium cursor-pointer">
                         Work
                     </h2>
-                </Link>
-                <Link
+                </ScrollLink>
+                <ScrollLink
                     activeClass="active"
                     to="Tutoring"
                     spy={true}
@@ -51,8 +52,8 @@ function Footer() {
                     <h2 className="text-light opacity-60 hover:opacity-100 hover:font-medium cursor-pointer">
                         Tutoring
                     </h2>
-                </Link>
-                <Link
+                </ScrollLink>
+                <ScrollLink
                     activeClass="active"
                     to="ContactMe"
                     spy={true}
@@ -64,7 +65,7 @@ function Footer() {
                     <h2 className="text-light opacity-60 hover:opacity-100 hover:font-medium cursor-pointer">
                         Contact Me
                     </h2>
-                </Link>
+                </ScrollLink>
                 {/* <h2>About Me</h2>
                     <h2>Work</h2>
                     <h2>Tutoring</h2>
