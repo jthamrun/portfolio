@@ -16,7 +16,7 @@ function Hero() {
                 Hello World - I am a developer and designer.
             </p>
 
-            <div className="mt-5 flex flex-col space-y-4 md:space-y-0 md:flex-row items-center justify-center space-x-4">
+            <div className="mt-5 flex flex-col space-y-4 md:space-y-0 md:flex-row items-center justify-center md:space-x-4">
                 <div className="flex space-x-2">
                     <Link href="https://www.instagram.com/jthamrun/">
                         <InstaIcon className="h-8 cursor-pointer" />
@@ -35,7 +35,7 @@ function Hero() {
                     duration={500}
                     className="cursor-pointer"
                 >
-                    <button className="md:self-center p-2 px-12 bg-black text-white">
+                    <button className="p-2 px-12 bg-black text-white">
                         <h2 className="">Contact Me</h2>
                     </button>
                 </ScrollLink>
