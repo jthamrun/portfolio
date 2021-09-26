@@ -15,8 +15,9 @@ function Dropdown({ isOpen, toggle }) {
                     to="AboutMe"
                     spy={true}
                     smooth={true}
-                    offset={-40}
+                    offset={-80}
                     duration={500}
+                    onClick={toggle}
                 >
                     <h2 className="text-light opacity-60 hover:opacity-100 hover:font-medium cursor-pointer">
                         About Me
@@ -27,9 +28,10 @@ function Dropdown({ isOpen, toggle }) {
                     to="Work"
                     spy={true}
                     smooth={true}
-                    offset={0}
+                    offset={-50}
                     duration={500}
                     className="cursor-pointer"
+                    onClick={toggle}
                 >
                     <h2 className="text-light opacity-60 hover:opacity-100 hover:font-medium cursor-pointer">
                         Work
@@ -40,9 +42,10 @@ function Dropdown({ isOpen, toggle }) {
                     to="Tutoring"
                     spy={true}
                     smooth={true}
-                    offset={0}
+                    offset={-50}
                     duration={500}
                     className="cursor-pointer"
+                    onClick={toggle}
                 >
                     <h2 className="text-light opacity-60 hover:opacity-100 hover:font-medium cursor-pointer">
                         Tutoring
@@ -56,6 +59,7 @@ function Dropdown({ isOpen, toggle }) {
                     offset={0}
                     duration={500}
                     className="cursor-pointer"
+                    onClick={toggle}
                 >
                     <h2 className="text-light opacity-60 hover:opacity-100 hover:font-medium cursor-pointer">
                         Contact Me
