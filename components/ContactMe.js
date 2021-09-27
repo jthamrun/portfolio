@@ -6,11 +6,12 @@ function ContactMe() {
     const [phone, setPhone] = useState("");
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
+    const [buttonText, setButtonText] = useState("Submit");
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log("Sending");
-
+        setButtonText("Sending");
         let data = {
             name,
             email,
@@ -27,13 +28,14 @@ function ContactMe() {
             })
             // setTimeout(() => reset(), 2000);
             setName("");
-                setEmail("");
-                setPhone("");
-                setSubject("");
-                setMessage("");
+            setEmail("");
+            setPhone("");
+            setSubject("");
+            setMessage("");
         } catch (error) {
             console.log(error);
         }
+        setButtonText("Submit");
 
         
         
@@ -125,7 +127,7 @@ function ContactMe() {
                         handleSubmit(e);
                     }}
                 >
-                    Submit
+                    {buttonText}
                 </button>
             </form>
         </div>
