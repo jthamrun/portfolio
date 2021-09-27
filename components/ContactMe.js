@@ -46,13 +46,14 @@ function ContactMe() {
             id="ContactMe"
         >
             <div className="text-center">
-                <h1 className="text-4xl font-bold">Contact</h1>
+                <h1 className="text-4xl font-bold">Get In Touch</h1>
                 <p className="mt-5 text-lg mb-10 lg:mb-0">
-                    Get in touch. Up your game <br />
-                    We're waiting, but the competition isn't.
+                    Feel free to contact me by filling up the form <br />
+                    or sending me an E-mail if you have any inquiries!
                 </p>
                 <p className="mt-5 font-light hidden md:inline-block p-2 border border-black border-opacity-50 cursor-pointer hover:border-opacity-100">
-                    jonathan.thamrun@gmail.com
+                    <a href="mailto:jonathan.thamrun@gmail.com"><p>jonathan.thamrun@gmail.com</p></a>
+                    
                 </p>
             </div>
 

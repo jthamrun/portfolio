@@ -7,7 +7,7 @@ function AboutMeInfo({ question, answer, link, mail }) {
                     &nbsp;&nbsp;&nbsp;=>&nbsp;&nbsp;{answer}
                 </p>
             ) : link == "true" && mail == "true" ? (
-                <a href={`mailto: ${answer}`}>
+                <a href={`mailto:${answer}`}>
                     <p className="text-black opacity-80 font-source tracking-wider">
                         &nbsp;&nbsp;&nbsp;=>&nbsp;&nbsp;
                         <span className="text-blue-500 font-source tracking-wider">
