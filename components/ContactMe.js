@@ -109,7 +109,7 @@ function ContactMe() {
 
                 <button
                     type="submit"
-                    className="inline-block bg-black text-white mt-5 rounded-full px-7 py-2 text-md"
+                    className="inline-block bg-black text-white mt-5 rounded-full px-7 py-2 text-md outline-none"
                     onClick={(e) => {
                         handleSubmit(e);
                     }}
