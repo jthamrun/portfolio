@@ -63,7 +63,7 @@ function ContactMe() {
                         value={name}
                         type="text"
                         placeholder="Name"
-                        className="border-2 border-black border-opacity-25 outline-none rounded-md p-2 px-3 focus:border-opacity-100 md:text-lg hover:border-opacity-75"
+                        className="border-2 border-black border-opacity-25 outline-none rounded-md p-2 px-3 focus:border-opacity-100 text-sm hover:border-opacity-75"
                         onChange={(e) => {
                             setName(e.target.value);
                         }}
@@ -72,7 +72,7 @@ function ContactMe() {
                         value={email}
                         type="text"
                         placeholder="Email"
-                        className="border-2 border-black border-opacity-25 outline-none rounded-md p-2 px-3 focus:border-opacity-100 md:text-lg hover:border-opacity-75"
+                        className="border-2 border-black border-opacity-25 outline-none rounded-md p-2 px-3 focus:border-opacity-100 text-sm hover:border-opacity-75"
                         onChange={(e) => {
                             setEmail(e.target.value);
                         }}
@@ -81,7 +81,7 @@ function ContactMe() {
                         value={phone}
                         type="text"
                         placeholder="Phone"
-                        className="border-2 border-black border-opacity-25 outline-none rounded-md p-2 px-3 focus:border-opacity-100 md:text-lg hover:border-opacity-75"
+                        className="border-2 border-black border-opacity-25 outline-none rounded-md p-2 px-3 focus:border-opacity-100 text-sm hover:border-opacity-75"
                         onChange={(e) => {
                             setPhone(e.target.value);
                         }}
@@ -90,7 +90,7 @@ function ContactMe() {
                         value={subject}
                         type="text"
                         placeholder="Subject"
-                        className="border-2 border-black border-opacity-25 outline-none rounded-md p-2 px-3 focus:border-opacity-100 md:text-lg hover:border-opacity-75"
+                        className="border-2 border-black border-opacity-25 outline-none rounded-md p-2 px-3 focus:border-opacity-100 text-sm hover:border-opacity-75"
                         onChange={(e) => {
                             setSubject(e.target.value);
                         }}
@@ -100,7 +100,7 @@ function ContactMe() {
                         rows="4"
                         type="text"
                         placeholder="Message"
-                        className="border-2 border-black border-opacity-25 outline-none rounded-md p-2 px-3 focus:border-opacity-100 md:text-lg hover:border-opacity-75"
+                        className="border-2 border-black border-opacity-25 outline-none rounded-md p-2 px-3 focus:border-opacity-100 text-sm hover:border-opacity-75"
                         onChange={(e) => {
                             setMessage(e.target.value);
                         }}
@@ -109,12 +109,12 @@ function ContactMe() {
 
                 <button
                     type="submit"
-                    className="inline-block bg-black text-white mt-5 rounded-full px-7 py-2 text-xl"
+                    className="inline-block bg-black text-white mt-5 rounded-full px-7 py-2 text-md"
                     onClick={(e) => {
                         handleSubmit(e);
                     }}
                 >
-                    Shoot.
+                    Submit
                 </button>
             </form>
         </div>
