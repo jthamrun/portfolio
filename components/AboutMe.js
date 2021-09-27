@@ -1,9 +1,25 @@
 import AboutMeInfo from "./AboutMeInfo";
+import React, { useEffect, useState } from "react";
 
 function AboutMe() {
+    const [isFirstAnimated, setIsFirstAnimated] = useState(false);
+
+    useEffect(() =>  {
+        let isSubscribed = true;
+        if (isSubscribed) {
+            setTimeout(() => {
+                setIsFirstAnimated(true);
+            }, 1400);
+
+        }
+        return () => isSubscribed = false;
+    })
+
     return (
         <div
-            className="mt-32 md:mt-20 mb-10 mx-5 md:mx-auto md:max-w-4xl"
+            className={`${
+                isFirstAnimated ? "" : "translate-y-1/4 opacity-0"
+            } opacity-1 transform transition duration-1000 ease mt-32 md:mt-20 mb-10 mx-5 md:mx-auto md:max-w-4xl`}
             id="AboutMe"
         >
             {/* <div className="text-center font-karla tracking-widest">

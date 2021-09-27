@@ -7,12 +7,18 @@ import React, { useState, useEffect } from "react";
 
 function Nav() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isFirstAnimated, setIsFirstAnimated] = useState(false);
 
     const toggle = () => {
         setIsOpen(!isOpen);
     };
 
     useEffect(() => {
+        let isSubscribed = true;
+        if (isSubscribed) {
+            setIsFirstAnimated(true);
+        }
+
         const hideMenu = () => {
             if (window.innerWidth > 768 && isOpen) {
                 setIsOpen(false);
@@ -22,11 +28,14 @@ function Nav() {
 
         return () => {
             window.removeEventListener("resize", hideMenu);
+            isSubscribed = false;
         };
     });
 
     return (
-        <header className="md:pt-14 md:pb-10 z-20 bg-white py-4">
+        <header className={`${
+                    isFirstAnimated ? "" : "-translate-y-1/2 opacity-0"
+                } opacity-1 transform transition duration-1000 ease-in-out md:pt-14 md:pb-10 z-20 bg-white py-4`} >
             <div className="flex flex-col h-24 ml-4 justify-center">
                 <div className="flex items-center">
                     {/* <MenuAlt4Icon className="h-11 p-1" /> */}
@@ -92,9 +101,8 @@ function Nav() {
 
             <div
                 className="flex h-24 -mt-24 mr-4 items-center justify-end cursor-pointer md:hidden"
-                onClick={toggle}
             >
-                <MenuAlt4Icon className="h-12 p-1" />
+                <MenuAlt4Icon className="h-12 p-1" onClick={toggle} />
             </div>
             <div className="md:flex h-24 -mt-24 mr-4 items-center justify-end cursor-pointer hidden space-x-2">
                 <Link

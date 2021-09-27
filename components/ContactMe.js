@@ -48,11 +48,11 @@ function ContactMe() {
             <div className="text-center">
                 <h1 className="text-4xl font-bold">Get In Touch</h1>
                 <p className="mt-5 text-lg mb-10 lg:mb-0">
-                    Feel free to contact me by filling up the form <br />
-                    or sending me an E-mail if you have any inquiries!
+                    Feel free to contact me by filling up the<br />
+                    form or sending me an E-mail if you have any inquiries!
                 </p>
                 <p className="mt-5 font-light hidden md:inline-block p-2 border border-black border-opacity-50 cursor-pointer hover:border-opacity-100">
-                    <a href="mailto:jonathan.thamrun@gmail.com"><p>jonathan.thamrun@gmail.com</p></a>
+                    <a href="mailto:jonathan.thamrun@gmail.com">jonathan.thamrun@gmail.com</a>
                     
                 </p>
             </div>
