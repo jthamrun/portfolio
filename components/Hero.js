@@ -13,15 +13,13 @@ function Hero() {
     useEffect(() =>  {
         let isSubscribed = true;
         if (isSubscribed) {
-            setTimeout(() => {
-                setIsFirstAnimated(true);
-            }, 500);
+            setIsFirstAnimated(true);
             setTimeout(() => {
                 setIsSecondAnimated(true);
-            }, 1000);
+            }, 800);
             setTimeout(() => {
                 setIsThirdAnimated(true);
-            }, 1300);
+            }, 1100);
 
         }
         return () => isSubscribed = false;

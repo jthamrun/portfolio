@@ -9,7 +9,7 @@ function AboutMe() {
         if (isSubscribed) {
             setTimeout(() => {
                 setIsFirstAnimated(true);
-            }, 1400);
+            }, 1200);
 
         }
         return () => isSubscribed = false;

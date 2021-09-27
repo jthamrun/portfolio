@@ -16,7 +16,9 @@ function Nav() {
     useEffect(() => {
         let isSubscribed = true;
         if (isSubscribed) {
-            setIsFirstAnimated(true);
+            setTimeout(() => {
+                setIsFirstAnimated(true);
+            }, 300);
         }
 
         const hideMenu = () => {
