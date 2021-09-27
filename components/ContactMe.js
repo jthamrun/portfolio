@@ -7,7 +7,7 @@ function ContactMe() {
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         console.log("Sending");
 
@@ -19,25 +19,36 @@ function ContactMe() {
             message,
         };
 
-        fetch("/api/contact", {
-            method: "POST",
-            headers: {
-                Accept: "application/json, text/plain, */*",
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(data),
-        }).then((res) => {
-            console.log("Response received");
-            if (res.status === 200) {
-                console.log("Response succeeded!");
-                alert("Successfully submitted a message!");
-                setName("");
+        try {
+            await fetch("/api/mail", {
+                "method": "POST",
+                "headers": { "content-type": "application/json" },
+                "body": JSON.stringify(data),
+            })
+            // setTimeout(() => reset(), 2000);
+            setName("");
                 setEmail("");
                 setPhone("");
                 setSubject("");
                 setMessage("");
-            }
-        });
+        } catch (error) {
+            console.log(error);
+        }
+
+        
+        
+        // .then((res) => {
+        //     console.log("Response received");
+        //     if (res.status === 200) {
+        //         console.log("Response succeeded!");
+        //         alert("Successfully submitted a message!");
+        //         setName("");
+        //         setEmail("");
+        //         setPhone("");
+        //         setSubject("");
+        //         setMessage("");
+        //     }
+        // });
     };
 
     return (
